@@ -1,0 +1,196 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<!--Import Google Icon Font-->
+ 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 	<!--Import materialize.css-->
+ 	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+ 	<link rel="stylesheet" type="text/css" href="css/surveyStyle.css">
+ 	<!--Let browser know website is optimized for mobile-->
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ </head>
+
+ <body>
+ 	<div class="row">
+ 		<div class="col s6 offset-s3" id="main">
+
+ 			<h2>Survey Questions</h2>
+ 			
+ 			<p id="enter">Enter your name</p>
+ 			<input type="text" id="name">
+
+ 			<p>1. You enjoy meeting new people</p>
+ 			<p>
+ 				<select id="q1">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>2. You like helping people</p>
+ 			<p>
+ 				<select id="q2">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>3. You sometimes make mistakes</p>
+ 			<p>
+ 				<select id="q3">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>4. You're easily disappointed</p>
+ 			<p>
+ 				<select id="q4">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>5. You enjoy repairing things</p>
+ 			<p>
+ 				<select id="q5">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>6. You like to be surrounded by people</p>
+ 			<p>
+ 				<select id="q6">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>7. You always think people are negatively judging you</p>
+ 			<p>
+ 				<select id="q7">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>8. You are open to new experiences</p>
+ 			<p>
+ 				<select id="q8">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>9. You usually conceal your feelings</p>
+ 			<p>
+ 				<select id="q9">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<p>10. You are nervous before big events</p>
+ 			<p>
+ 				<select id="q10">
+ 					<option value="" disabled selected>Choose your option</option>
+ 					<option value="1">Strongly Disagree</option>
+ 					<option value="2">Disagree</option>
+ 					<option value="3">Unsure</option>
+ 					<option value="4">Agree</option>
+ 					<option value="5">Strongly Agree</option>
+ 				</select>
+ 			</p>
+
+ 			<button class="waves-effect waves-light btn modal-trigger" id="submit"><i class="material-icons left">check</i>submit</button>
+
+ 		</div>
+ 	</div>
+
+ 	<div id="modal1" class="modal">
+ 		<div class="modal-content">
+ 			<h4>Congratulations, we found a match!</h4>
+ 			<p id="modalcontents"></p>
+ 		</div>
+ 		<div class="modal-footer">
+ 			<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat" id="agree">Awesome!</a>
+ 		</div>
+ 	</div>
+
+ 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ 	<script type="text/javascript">
+ 		$(document).ready(function() {
+ 			$('select').material_select();
+ 			$('.modal').modal();
+ 		});
+ 		
+ 		$("#submit").on("click", function(event) {
+
+ 			var answers = [];
+ 			answers.push($("#q1").val());
+ 			answers.push($("#q2").val());
+ 			answers.push($("#q3").val());
+ 			answers.push($("#q4").val());
+ 			answers.push($("#q5").val());
+ 			answers.push($("#q6").val());
+ 			answers.push($("#q7").val());
+ 			answers.push($("#q8").val());
+ 			answers.push($("#q9").val());
+ 			answers.push($("#q10").val());
+
+ 			var newUser = {
+ 				name: $("#name").val().trim(),
+ 				answers: answers
+ 			};
+
+ 			$.post("/api/add", newUser, function(data) {
+ 				$("#modalcontents").html("Your match's name is: " + data.matchName + "<br> The total difference between your answers and their's was: " + data.diff);
+ 				$('#modal1').modal('open');
+ 			})
+
+ 		});
+
+ 		$("#agree").on("click", function(event) {
+ 			location.reload();
+ 		})
+ 	</script>
+ </body>
+ </html>

@@ -1,0 +1,38 @@
+#main {
+	background: lightblue;
+	color: black;
+	padding: 30px;
+}
+
+#start {
+	padding-left: 20px;
+}
+
+#description {
+	font-size: 25px;
+}
+
+.flow-text {
+	font-size: 50px;
+}
+
+body {
+	background: white;
+}
+
+hr {
+	border: 1px solid grey;
+}
+
+h2 {
+	margin-top: 0px;
+}
+
+#enter {
+	margin-bottom: 0px;
+	font-size: 20px;
+}
+
+#modalcontents {
+	font-size: 18px;
+}
